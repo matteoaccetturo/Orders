@@ -1,13 +1,13 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
     <head>
-        <title>Dynamic Form Processing with PHP | Tech Stream</title>
+        <title>Ordini</title>
         <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
         <link rel="stylesheet" type="text/css" href="css/default.css"/>
     </head>
     <body>    
         <form action="" class="register">
-            <h1>YouAreBUS Ticket Reservation</h1>
+            <h1>Hai caricato il seguente ordine</h1>
 			<?php if(isset($_POST['save'])): 
 				$chkbox = $_POST['chk'];
 				$bus = $_POST['bus'];
@@ -28,24 +28,24 @@
 			<fieldset class="row1">
                 <legend>Azienda</legend>
 				<p>
-                    <label>BUS Name 
+                    <label>Nome azienda 
                     </label>
                     <input name="bus" type="text" readonly="readonly" value="<?php echo $bus ?>"/>
-                    <label>Date of journey
+                    <label>Data
                     </label>
 					<input type="text" readonly="readonly" class="small" value="<?php echo $day ?>"/>
 					<input type="text" readonly="readonly" class="small" value="<?php echo $month ?>"/>
 					<input type="text" readonly="readonly" class="small" value="2013"/>
-					<label>Bus Type  
+					<label>Consegna  
                     </label>
                     <input  type="text" readonly="readonly" value="<?php echo $type ?>"/>
 					
                 </p>
                 <p>
-                    <label>Boarding From
+                    <label>Motivazione
                     </label>
                     <input name="from" type="text" readonly="readonly" value="<?php echo $from ?>"/>
-                    <label>To
+                    <label>Richiedente
                     </label>
                     <input name="to" type="text" readonly="readonly" value="<?php echo $to ?>"/>
 <!--					<label>Via (Root)
@@ -54,7 +54,7 @@
 					 
                 </p>
                 <p>
-                    <label>Mobile
+                    <label>Offerta n.
                     </label>
                     <input name="mob" type="text" readonly="readonly" value="<?php echo $mob ?>"/>
 <!--                    <label >(You will receive 
